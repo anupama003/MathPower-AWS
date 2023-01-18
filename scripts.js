@@ -14,7 +14,7 @@ var callAPI = (base,exponent)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("YOUR API GATEWAY ENDPOINT", requestOptions)
+    fetch("https://bxf41sfqwa.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
